@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title> 
+            Welcome To PESU-BANK!
+        </title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li> <a href = "#"><img src = ""></a> </li>
+                <li> <a href = "MyAccount.html">MyAccount</a> </li>
+                <li> <a href = "card.html">Get Debit/Credit card</a> </li>
+                <li> <a href = "about.html">About</a></li>
+                <li> <a href = "contact.html">Contact Us</a></li>
+            </ul>
+            
+        </nav>
+
+        <form action = "login.php" method = "post"> 
+            <label>Username:</label>
+            <input type ="email" name = "email" placeholder = "yourname@email.com"><br>
+            <label>Password:</label>
+            <input type ="password" name = "pwd" placeholder = "Password"><br>
+            <button type ="submit">Login</button>
+        </form>
+
+        <p>Don't Have an Account yet?</p>
+            <button id = "register">Register for FREE!</button>
+    </body>
+</html>
+
+
+<script type="text/javascript">
+    document.getElementById("register").onclick = function () {
+        location.href = "register.php";
+    };
+</script>
