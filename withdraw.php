@@ -30,14 +30,15 @@
 </style>
 <body class="bg">
 
-	<div >
 		<div align="center" class="cred">
 			<form align = "center" action="login.php" method ="POST">
 				Amount to be withdrawn<br> <input type="number" name="With_amt"><br><br>
 				<input type="submit" name = "withdraw" value="Withdraw">
 			</form>
 		</div>	
-	</div>	
+        <div class="help" align="right">
+            
+            
 </body>
 </html>		
 

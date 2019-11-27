@@ -30,14 +30,13 @@
 </style>		
 <body class="bg">
 
-	<div >
+
 		<div align="center" class="cred">
 			<form align = "center" action="login.php" method ="POST">
 				Amount to be deposited<br> <input type="number" name="Dep_amt"><br><br>
 				<input type="submit" name = "deposit" value="Deposit">
 			</form>
-		</div>	
-	</div>	
+		</div>		
 </body>
 </html>		
 

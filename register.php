@@ -13,6 +13,7 @@ if(isset($_POST['login-submit'])){
     $address = $_POST['Address'];
     $balance = 0;
 
+
     if(empty($username) || empty($password) || empty($password_confirm) ||
        empty($email) || empty($ph_num) ||
        empty($gender)){
@@ -55,7 +56,7 @@ if(isset($_POST['login-submit'])){
                     exit();
                 }   
                 else{
-                    //$hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
+                    $hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($statement,"sssiissi" ,$username,$email,$password,$ph_num,$age,$gender,$address,$balance);
                     mysqli_stmt_execute($statement);
                     mysqli_stmt_store_result($statment);
@@ -66,6 +67,10 @@ if(isset($_POST['login-submit'])){
             }
         }
     }
+    mysqli_stmt_close($stmt);
+    mysqli_stmt_close($statement);
+    mysqli_close($connect);
+
 }
 
 else{
