@@ -104,7 +104,7 @@
         <a id = "link" class="nav-link" href="#">asfafafa</a>
         </li>
         <li class="nav-item">
-            <button id = "link" class="nav-link" style = "background-color:#ffef96;color:black;font-weight:bold"><a href = "logout.php?logout=1">LOGOUT</a></button>
+            <button id = "link" class="nav-link" style = "background-color:#ffef96; color:#50394c; font-weight:bold"><a href = "logout.php?logout=1">LOGOUT</a></button>
         </li>
         </ul>
     </div>
@@ -116,7 +116,6 @@
         <a href="#clients">Check Balance</a>
         <a href="#contact">Contact</a>
     </div>    
-
 
 </body>
 
