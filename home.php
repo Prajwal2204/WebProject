@@ -11,6 +11,7 @@
       .foot{
           padding-top: 4%;
       } 
+
 </style>
 
 <!DOCTYPE html>

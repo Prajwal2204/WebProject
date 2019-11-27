@@ -80,7 +80,10 @@
                 padding-top:200px;
                 color:#50394c;
             }
-                            
+
+            .news{
+                color:#50394c;
+            }                
                             
             </style>
 </head>
@@ -109,6 +112,16 @@
         </ul>
     </div>
     </nav>
+    <div align="right" class="news">
+       <marquee> <h4>News</h4>
+        <a href = "https://economictimes.indiatimes.com/industry/banking/finance/banking/the-common-code-for-responsible-lending-crl-for-microfinance-has-a-few-big-names-missing/articleshow/72265943.cms" target="_blank">
+        The common “Code for Responsible Lending” (CRL) for microfinance has a few big names missing</a><br>
+        <a href = "https://economictimes.indiatimes.com/industry/banking/finance/banking/pmc-scam-court-gives-nod-to-sell-jets-yacht-of-wadhawans/articleshow/72261980.cms" target="_blank">
+        PMC scam: Court gives nod to sell jets, yacht of Wadhawans</a><br>
+        <a href = "https://economictimes.indiatimes.com/industry/banking/finance/banking/rbi-red-flags-rising-stress-in-mudra-loans-asks-banks-to-monitor-closely/videoshow/72251697.cms" target="_blank">
+        RBI red-flags rising stress in Mudra loans, asks banks to monitor closely</a><br>
+        </marquee></div>    
+        
     <div class="sidenav sidebar-expand sidebar-custom">
         <h3><b>Quick Access</b></h3>    
         <a href="deposit.php">Deposit</a>
