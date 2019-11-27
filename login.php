@@ -26,12 +26,11 @@ if(isset($_POST['login-submit']))
         {
             mysqli_stmt_bind_param($stmt,"ss" ,$username,$password);
             mysqli_stmt_execute($stmt);
-            mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_get_result($stmt);
             if($row = mysqli_fetch_assoc($resultCheck))
             {
                 $passwordFlag = password_verify($password , $row['pwd']);
-                if($password != $row['pwd'])
+                if($passwordFlag == False)
                 {
                     header("Location:/web_tech/login.html?error=username/passwordWrong1"
                     ."&Username=".$username."&Email=".$email."&Number=".$ph_num);
@@ -43,7 +42,7 @@ if(isset($_POST['login-submit']))
                     $_SESSION['ID'] = $row['ID'];
                     $_SESSION['username'] = $row['username'];
                     $_SESSION['balance'] = $row['balance'];
-                    echo "NOICE";
+                    header("Location:/web_tech/home.php");
                 }
             }
             else

@@ -57,7 +57,7 @@ if(isset($_POST['login-submit'])){
                 }   
                 else{
                     $hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
-                    mysqli_stmt_bind_param($statement,"sssiissi" ,$username,$email,$password,$ph_num,$age,$gender,$address,$balance);
+                    mysqli_stmt_bind_param($statement,"sssiissi" ,$username,$email,$hashed_pwd,$ph_num,$age,$gender,$address,$balance);
                     mysqli_stmt_execute($statement);
                     mysqli_stmt_store_result($statment);
                     header("Location:/web_tech/login.html?signup=SUCCESS");
