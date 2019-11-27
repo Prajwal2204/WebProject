@@ -114,7 +114,7 @@
         <a href="deposit.php">Deposit</a>
         <a href="withdraw.php">Withdraw</a>
         <a href="#clients">Check Balance</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.php">Need help?</a>
     </div>    
 
 </body>
