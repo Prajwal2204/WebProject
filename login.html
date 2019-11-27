@@ -1,33 +1,46 @@
+
 <html>
-<head> <title> PESU-Bank </title></head>
+<head> <title> Legal Documents Handler </title></head>
 <style>
 	.bg{
-		background: linear-gradient(to right, rgb(4, 0, 255), #08080a);
+		background-color:rgb(37, 39, 39);
 		height:100%;
 		align-content: center;
-		padding:300px;
+		padding:200px;
+		color:aliceblue;
+		font-size:30;
 		}
 	.cred {
 		margin: auto;
-  		width: 60%;
-		border: 3px solid #73AD21;
-		padding: 10px;
-		background:white;
+  		width: 50%;
+		padding: 0px;
 		font-size:large;
 		}	
+	#head{
+
+		text-align:center;
+		align-content:center;
+	}
 </style>		
-<body>
-	<h1 style="background-color:rgb(17, 0, 255)" align="center"><b>PESU Bank</b></h1>
-	<div class="bg">
+<body class="bg">
+	<h1 id = "head">WELCOME TO</h1>
+	<h1 id = "head">PESU BANK</h1>
+	<div >
 		<div align="center" class="cred">
-			<form action="/action_page.php">
-				Username: <input type="text" name="Username"><br><br>
-				Password: <input type="password" name="Password"><br><br>
-				<input type="submit" value="Login">
+			<form align = "center" action="login.php" method ="POST">
+				USERNAME<br> <input type="text" name="Username"><br><br>
+				PASSWORD<br> <input type="password" name="Password"><br><br>
+				<input type="submit" name = "login-submit" value="Login">
 			</form>
-			<a href = "sign-up.html">Sign-up?</a>
+			<button id = "register">REGISTER FOR FREE!</button>
 		</div>	
 	</div>	
 </body>
 </html>		
+
+<script type="text/javascript">
+    document.getElementById("register").onclick = function () {
+        location.href = "register.html";
+    };
+</script>
 

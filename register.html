@@ -1,0 +1,53 @@
+<html>
+<head> <title> SIGN UP </title></head>
+<style>
+	.bg{
+		background: linear-gradient(to right, rgb(86, 86, 92), #08080a);
+		height:100%;
+		align-content: center;
+		padding:200px;
+		}
+	.cred {
+		margin: auto;
+  		width: 70%;
+		padding: 10px;
+		background:white;
+		font-size:large;
+		}	
+</style>		
+<body class="bg">
+    
+	<div >
+		<div align="center" class="cred">
+            <h1 style="color:black;font-size:50 " color= "white" align="center"><b>PESU BANK</b></h1>
+            <h3 style="color:black;font-size:35 " align="center">ENTER YOUR PERSONAL DETAILS</h3>
+
+			<form action="register.php" method = "POST">
+                Username: <input type="text" name="Username"><br><br>
+                Email ID: <input type="text" name="Email"><br><br>
+                Password: <input type="password" name="Password"><br><br>
+                Confirm Password: <input type="password" name="Password-confirm"><br><br>
+				Phone Number: <input type="number" name="Number" size = "10"><br><br>
+				Age: <input type="number" name="Age"><br><br>
+				Gender:<select name="Gender">
+					<option value="male" selected>male</option>
+					<option value="female">female</option>
+				  </select><br><br>
+                Address:<input type="textarea" name="Address"><br><br>
+                
+				
+				<button type="submit" name = "login-submit" >SIGN-UP</button>
+            </form>
+
+
+		</div>	
+	</div>	
+</body>
+</html>	
+
+
+<script>
+    //also use width in field tags in the form to make it responisve........
+    //CHECK FOR PASSWORD CONFIRMATION//
+
+</script>
