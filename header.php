@@ -22,38 +22,39 @@
 
             .sidenav {
                 height: 100%;
-                width: 200px;
+                width: 15%;
                 position: absolute;
                 z-index: 1;
                 top: 0;
                 left: 0;
                 background-color: #111;
                 overflow-x: hidden;
-                padding-top: 60px;
+                padding-top: 1%;
+                margin-top:62px;
                 }
 
             .sidenav a {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
-                font-size: 25px;
-                color: #d1d1d1;
+                font-size: 35px;
                 display: block;
+                color:#50394c;
                 }
 
             .sidenav h3 {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
-                font-size: 35px;
-                color: #d1d1d1;
+                font-size: 40px;
                 display: block;
+                color:#50394c;
                 }    
 
             .sidenav a:hover {
-                color: #f1f1f1;
+                color: #b2b2b2;
                 }
 
             .main {
-                margin-left: 160px; /* Same as the width of the sidenav */
+                margin-left: 45%; /* Same as the width of the sidenav */
                 font-size: 28px; /* Increased text to enable scrolling */
                 padding: 0px 10px;
                 }
@@ -62,36 +63,47 @@
                 .sidenav {padding-top: 15px;}
                 .sidenav a {font-size: 18px;}
                 }
+            #link{
+                padding-right:20px;
+                font-size:20px;
+            }
+            .navbar-custom {
+                background-color:#50394c;
+            }
+            .sidebar-custom{
+                background-color: #ffef96;
+                
+            }
                             
                             
             </style>
 </head>
 <body>
             
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" style="margin-left:45%" href="#"><b id = "logo">PESU-BANK</b></a>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <a class="navbar-brand" style="margin-left:45%" href="home.php"><b id = "logo">PESU-BANK</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" style="margin-left:30%" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" style="margin-left:20%" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#">LOGIN <span class="sr-only">(current)</span></a>
+            <a id = "link" class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a id = "link" class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">asfafafa</a>
+        <a id = "link" class="nav-link" href="#">asfafafa</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <a id = "link" class="nav-link" href="#">Disabled</a>
         </li>
         </ul>
     </div>
     </nav>
-    <div class="sidenav sidebar-expand bg-info">
+    <div class="sidenav sidebar-expand sidebar-custom">
     <h3>Quick Access</h3>    
     <a href="deposit.php">Deposit</a>
     <a href="withdraw.php">Withdraw</a>
