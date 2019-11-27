@@ -19,7 +19,7 @@
         height: 50%;
   		width: 50%;
 		padding: 10%;
-        color: #17a2b8;
+        color: #50394c;
 		font-size:30px;
 		}	
 	#head{
@@ -27,6 +27,10 @@
 		text-align:center;
 		align-content:center;
 	}
+
+	.foot{
+          padding-top: 8%;
+      } 
 </style>
 <body class="bg">
 
@@ -36,7 +40,11 @@
 				<input type="submit" name = "withdraw" value="Withdraw">
 			</form>
 		</div>	
-        <div class="help" align="right">
+        <div align="right" class="foot">
+        <h4>In case of any trouble, feel free to contact us:</h4>
+        <h4>Call us: +91 987654321</h4>
+        <h4>Mail us: pesubank@gmail.com</h4>
+    </div>
             
             
 </body>

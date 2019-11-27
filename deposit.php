@@ -19,7 +19,7 @@
         height: 50%;
   		width: 50%;
 		padding: 10%;
-        color: #17a2b8;
+        color: #50394c;
 		font-size:30px;
 		}	
 	#head{
@@ -27,16 +27,26 @@
 		text-align:center;
 		align-content:center;
 	}
+
+	.foot{
+          padding-top: 5%;
+      } 
 </style>		
 <body class="bg">
 
 
 		<div align="center" class="cred">
 			<form align = "center" action="login.php" method ="POST">
+				Don't worry.. Your money is safe with us..<br><br>
 				Amount to be deposited<br> <input type="number" name="Dep_amt"><br><br>
 				<input type="submit" name = "deposit" value="Deposit">
 			</form>
-		</div>		
+		</div>
+		<div align="right" class="foot">
+        <h4>In case of any trouble, feel free to contact us:</h4>
+        <h4>Call us: +91 987654321</h4>
+        <h4>Mail us: pesubank@gmail.com</h4>
+    </div>		
 </body>
 </html>		
 

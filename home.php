@@ -8,9 +8,9 @@
     
 ?>
 <style>
-    {
-        
-    }
+      .foot{
+          padding-top: 8%;
+      } 
 </style>
 
 <!DOCTYPE html>
@@ -60,6 +60,11 @@
     </a>
   </div>
 </div>
+<div align="right" class="foot">
+        <h4>In case of any trouble, feel free to contact us:</h4>
+        <h4>Call us: +91 987654321</h4>
+        <h4>Mail us: pesubank@gmail.com</h4>
+    </div>
 
 </body>
 </html>

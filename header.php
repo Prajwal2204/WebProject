@@ -75,6 +75,11 @@
                 background-color: #ffef96;
                 
             }
+
+            .foot{
+                padding-top:200px;
+                color:#50394c;
+            }
                             
                             
             </style>
@@ -105,14 +110,14 @@
     </div>
     </nav>
     <div class="sidenav sidebar-expand sidebar-custom">
-    <h3><b>Quick Access</b></h3>    
-    <a href="deposit.php">Deposit</a>
-    <a href="withdraw.php">Withdraw</a>
-    <a href="#clients">Check Balance</a>
-    <a href="#contact">Contact</a>
-    <div>
-        </div>
-</div>
+        <h3><b>Quick Access</b></h3>    
+        <a href="deposit.php">Deposit</a>
+        <a href="withdraw.php">Withdraw</a>
+        <a href="#clients">Check Balance</a>
+        <a href="#contact">Contact</a>
+    </div>    
+
+
 </body>
 
 </html>
