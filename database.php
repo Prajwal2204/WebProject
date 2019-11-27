@@ -14,7 +14,7 @@ if(!$connect){
 }
 
 
-$sql = "CREATE TABLE IF NOT EXISTS table_test(
+$sql = "CREATE TABLE IF NOT EXISTS table_test_balance(
     ID INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     username TINYTEXT NOT NULL,
     email TINYTEXT NOT NULL,
@@ -22,7 +22,8 @@ $sql = "CREATE TABLE IF NOT EXISTS table_test(
     ph_num INT(10) NOT NULL,
     AGE int(3) NOT NULL,
     gender TINYTEXT NOT NULL,
-    home_add LONGTEXT
+    home_add LONGTEXT,
+    balance INT(10) NOT NULL
     )";
 
 $result = mysqli_query($connect,$sql) or die("COULD NOT CREATE ");

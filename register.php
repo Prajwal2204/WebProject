@@ -11,6 +11,7 @@ if(isset($_POST['login-submit'])){
     $age = $_POST['Age'];
     $gender = $_POST['Gender'];
     $address = $_POST['Address'];
+    $balance = 0;
 
     if(empty($username) || empty($password) || empty($password_confirm) ||
        empty($email) || empty($ph_num) ||
@@ -25,19 +26,19 @@ if(isset($_POST['login-submit'])){
             exit();
     }
 
-    else if($password != $password_cconfirm){
+    else if($password != $password_confirm){
             header("Location:/web_tech/register.html?error=PasswordsDontMatch"
             ."&Username=".$username."&Email=".$email."&Number=".$ph_num);
             exit(); 
     }
     else{
-        $sql_search_username = "SELECT username FROM table_test WHERE username=?";
-        $statement = mysqli_stmt_init($connect);
+        $sql_search_username = "SELECT username FROM table_test_balance WHERE username=?";
+        $stmt = mysqli_stmt_init($connect);
         if(!mysqli_stmt_prepare($stmt,$sql_search_username)){
             echo "SQL ERROR!";
         }
         else{
-            mysqli_stmt_bind_param($statement,"s" ,$username);
+            mysqli_stmt_bind_param($stmt,"s" ,$username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
@@ -47,8 +48,21 @@ if(isset($_POST['login-submit'])){
             exit(); 
             }
             else{
-                $sql_search_username = "INSERT INTO table_test (username,email,pwd,
-                                                                ph_num,AGE,gender,home_add) VALUES (?,?,?,?,?,?,?)";
+                $sql_insert = "INSERT INTO table_test_balance (username,email,pwd,ph_num,AGE,gender,home_add,balance) VALUES (?,?,?,?,?,?,?,?)";
+                $statement = mysqli_stmt_init($connect);
+                if(!mysqli_stmt_prepare($statement,$sql_insert)){
+                    echo "DATABASE ENTRY ERROR !";
+                    exit();
+                }   
+                else{
+                    //$hashed_pwd = password_hash($password, PASSWORD_DEFAULT);
+                    mysqli_stmt_bind_param($statement,"sssiissi" ,$username,$email,$password,$ph_num,$age,$gender,$address,$balance);
+                    mysqli_stmt_execute($statement);
+                    mysqli_stmt_store_result($statment);
+                    header("Location:/web_tech/login.html?signup=SUCCESS");
+                    exit(); 
+                }                            
+
             }
         }
     }
