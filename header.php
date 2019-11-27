@@ -22,23 +22,31 @@
 
             .sidenav {
                 height: 100%;
-                width: 160px;
-                position: fixed;
+                width: 200px;
+                position: absolute;
                 z-index: 1;
                 top: 0;
                 left: 0;
                 background-color: #111;
                 overflow-x: hidden;
-                padding-top: 20px;
+                padding-top: 60px;
                 }
 
             .sidenav a {
                 padding: 6px 8px 6px 16px;
                 text-decoration: none;
                 font-size: 25px;
-                color: #818181;
+                color: #d1d1d1;
                 display: block;
                 }
+
+            .sidenav h3 {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 35px;
+                color: #d1d1d1;
+                display: block;
+                }    
 
             .sidenav a:hover {
                 color: #f1f1f1;
@@ -84,9 +92,10 @@
     </div>
     </nav>
     <div class="sidenav sidebar-expand bg-info">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#clients">Clients</a>
+    <h3>Quick Access</h3>    
+    <a href="deposit.php">Deposit</a>
+    <a href="withdraw.php">Withdraw</a>
+    <a href="#clients">Check Balance</a>
     <a href="#contact">Contact</a>
 </div>
 </body>
