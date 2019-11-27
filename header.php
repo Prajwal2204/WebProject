@@ -9,6 +9,7 @@
 
         <style>
             *{
+                
                 margin :0px;
                 padding:0px;
             }
@@ -22,7 +23,7 @@
 
             .sidenav {
                 height: 100%;
-                width: 15%;
+                width: 17%;
                 position: absolute;
                 z-index: 1;
                 top: 0;
@@ -78,7 +79,7 @@
                             
             </style>
 </head>
-<body>
+<body style = "background-color:#f4e1d2">
             
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <a class="navbar-brand" style="margin-left:45%" href="home.php"><b id = "logo">PESU-BANK</b></a>
@@ -98,17 +99,19 @@
         <a id = "link" class="nav-link" href="#">asfafafa</a>
         </li>
         <li class="nav-item">
-            <a id = "link" class="nav-link" href="#">Disabled</a>
+            <button id = "link" class="nav-link" style = "background-color:#ffef96;color:black;font-weight:bold"><a href = "logout.php?logout=1">LOGOUT</a></button>
         </li>
         </ul>
     </div>
     </nav>
     <div class="sidenav sidebar-expand sidebar-custom">
-    <h3>Quick Access</h3>    
+    <h3><b>Quick Access</b></h3>    
     <a href="deposit.php">Deposit</a>
     <a href="withdraw.php">Withdraw</a>
     <a href="#clients">Check Balance</a>
     <a href="#contact">Contact</a>
+    <div>
+        </div>
 </div>
 </body>
 

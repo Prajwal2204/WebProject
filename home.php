@@ -1,9 +1,17 @@
 <?php
     session_start();
     require "header.php";
-
+    if(!isset($_SESSION['username'])){
+        header("Location:/web_tech/login.html");
+        exit();
+    }
     
 ?>
+<style>
+    {
+        
+    }
+</style>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,18 +25,18 @@
 </head>
 <body>
 
-<div class="container">
-  <h2><b>WELCOME <?php echo "<b>".strtoupper($_SESSION['username'])."</b>" ?></b></h2>  
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<div class="container"> 
+  <h2><b align = 'auto' ><?php echo "<p  style = 'color:#50394c;font-size:30px;'>WELCOME ".strtoupper($_SESSION['username'])."</p>" ?></b></h2>  
+  <div id="myCarousel" class="carousel slide"  data-ride="carousel">
+
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+
+    <div class="carousel-inner" >
       <div class="item active">
         <img src="img/card.jpeg" alt="card" style="width:100%;height:600px">
       </div>
@@ -42,7 +50,6 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
