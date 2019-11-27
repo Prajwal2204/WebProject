@@ -98,10 +98,10 @@
             <a id = "link" class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a id = "link" class="nav-link" href="#">Link</a>
+            <a id = "link" class="nav-link" href="faq.php">FAQs</a>
         </li>
         <li class="nav-item">
-        <a id = "link" class="nav-link" href="#">asfafafa</a>
+        <a id = "link" class="nav-link" href="contact.php">Contact Us</a>
         </li>
         <li class="nav-item">
             <button id = "link" class="nav-link" style = "background-color:#ffef96; color:#50394c; font-weight:bold"><a href = "logout.php?logout=1">LOGOUT</a></button>
@@ -115,6 +115,7 @@
         <a href="withdraw.php">Withdraw</a>
         <a href="#clients">Check Balance</a>
         <a href="contact.php">Need help?</a>
+        <a href="faq.php">FAQs</a>
     </div>    
 
 </body>
